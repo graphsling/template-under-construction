@@ -3,7 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>{{ env.client.name }}</title>
+
+    {% if env.isProd %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.google }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', '{{ env.tracking.google }}');
+    </script>
+    {% endif %}
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
