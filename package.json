@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "template-landing-page",
+  "homepage": "https://github.com/graphsling-solutions/template-landing-page",
+  "author": "Graphsling Solutions",
+  "license": "Prive",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphsling-solutions/template-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/graphsling-solutions/template-landing-page/issues"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
