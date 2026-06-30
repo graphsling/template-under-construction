@@ -1,1 +1,27 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{{ env.client.name }} </title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="bg-black font-google-sans text-white">
+        <div class="flex flex-col min-h-screen" data-pg-name="Content">
+            <header class="py-6 px-8 flex justify-between items-center" data-pg-name="Header">
+                <div class="font-bold text-xl tracking-tight">{{ env.client.name }}</div>
+                <nav class="flex gap-6 text-sm font-medium">
+                    <a href="tel:{{ env.client.phone }}" class="text-gray-200 transition hover:text-gray-400">Call</a>
+                    <a href="https://wa.me/{{ env.client.whatsApp }}" class="text-gray-200 transition hover:text-gray-400">WhatsApp</a>
+                    <a href="mailto:{{ env.client.mail }}" class="text-gray-200 transition hover:text-gray-400">Mail</a>
+                </nav>
+            </header>
+            <main class="flex-grow flex flex-col items-center justify-center p-8" data-pg-name="Main">
+                <h1 class="font-volkhov mb-2 text-4xl">{{ env.client.tag }}</h1>
+            </main>
+            <footer class="py-6 text-center text-sm" data-pg-name="Footer">
+                <p>developed with ❤️ by <a href="https://www.graphsling.co.za" class="font-bold hover:underline font-archivo">graphsling</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
