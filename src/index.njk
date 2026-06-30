@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{{ env.client.name }}</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body class="bg-black font-google-sans text-white">
-        <div class="flex flex-col min-h-screen" data-pg-name="Content">
-            <header class="flex font-archivo items-center justify-center px-8 py-6 text-2xl" data-pg-name="Header">{{ env.client.name }}</header>
-            <main class="flex-grow flex flex-col items-center justify-center p-8" data-pg-name="Main">
-                <h1 class="font-google-sans mb-2 text-4xl text-center">{{ env.client.tag }}</h1>
-                <br>
-                <br>
-                <a href="tel:{{ env.client.phone }}" class="border-2 border-current justify-center mb-2 rounded-full text-center text-gray-200 text-lg transition w-40 hover:text-gray-400">Call</a>
-                <a href="https://wa.me/{{ env.client.whatsApp }}" class="border-2 border-current justify-center mb-2 rounded-full text-center text-gray-200 text-lg transition w-40 hover:text-gray-400">WhatsApp</a>
-                <a href="mailto:{{ env.client.mail }}" class="border-2 border-current justify-center mb-2 rounded-full text-center text-gray-200 text-lg transition w-40 hover:text-gray-400">Mail</a>
-            </main>
-            <footer class="py-6 text-center text-sm" data-pg-name="Footer">
-                <p class="text-gray-500">developed with ❤️ by <a href="https://www.graphsling.co.za" class="font-bold hover:underline font-archivo">graphsling</a></p>
-            </footer>
-        </div>
-    </body>
-</html>
+---
+layout: base.layout.njk
+---
+<div class="flex flex-col min-h-screen bg-black font-google-sans text-white" data-pg-name="Content">
+  <header class="flex font-archivo items-center justify-center px-8 py-6 text-2xl" data-pg-name="Header">{{ env.client.name }}</header>
+  <main class="flex-grow flex flex-col items-center justify-center p-8" data-pg-name="Main">
+    <h1 class="font-google-sans mb-2 text-4xl text-center">{{ env.client.tag }}</h1>
+    <br>
+    <br>
+    <a href="tel:{{ env.client.phone }}" class="border-2 border-current justify-center mb-2 rounded-full text-center text-gray-200 text-lg transition w-40 hover:text-gray-400">Call</a>
+    <a href="https://wa.me/{{ env.client.whatsApp }}" class="border-2 border-current justify-center mb-2 rounded-full text-center text-gray-200 text-lg transition w-40 hover:text-gray-400">WhatsApp</a>
+    <a href="mailto:{{ env.client.mail }}" class="border-2 border-current justify-center mb-2 rounded-full text-center text-gray-200 text-lg transition w-40 hover:text-gray-400">Mail</a>
+  </main>
+  <footer class="py-6 text-center text-sm" data-pg-name="Footer">
+    <p class="text-gray-500">developed with ❤️ by <a href="https://www.graphsling.co.za" class="font-bold hover:underline font-archivo">graphsling</a></p>
+  </footer>
+</div>
